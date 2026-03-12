@@ -1,6 +1,5 @@
 """
-Challenge: CSV-TO-JSON Converter Tool
-
+Challenge: A CSV-TO-JSON Converter Tool
 """
 
 import os

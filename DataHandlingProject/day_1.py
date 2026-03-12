@@ -11,7 +11,7 @@ Your program should:
    - Exit
 2. Store contacts in a file called `contacts.csv` with columns:
    - Name
-   - Phone
+   - Phone Number
    - Email
 3. If the file doesn't exist, create it automatically.
 4. Keep the interface clean and clear.

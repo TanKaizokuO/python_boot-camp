@@ -9,7 +9,7 @@ Date,City,Temperature,Condition
 2025-06-16,Delhi,33.4,Rain
 2025-06-17,Delhi,34.7,Clear
 
-Plot graphs from this data
+Plot graphs from  data
 
 
 """
