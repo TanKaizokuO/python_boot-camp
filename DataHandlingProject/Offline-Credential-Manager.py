@@ -1,5 +1,5 @@
 """
-Challenge: Offline Credential Manager
+Challenge: Offline-Credential-Manager
 
 Create a CLI tool to manage login credentials (website, username, password) in an encoded local file (`vault.txt`).
 
