@@ -1,3 +1,0 @@
-Buy groceries||not_done
-Finish Python project||done
-Read a || book||not_done
