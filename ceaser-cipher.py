@@ -27,7 +27,7 @@ if choice == "e":
     except ValueError:
         print("Invalid key")
 elif choice == "d":
-    text = input("Enter your encrypted message: \n")
+    text = input("Enter your encrypted message : \n")
     try:
         key = int(input("Enter a number between 1 and 25: "))
         decrypted = decrypt(text, key)
