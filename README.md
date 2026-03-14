@@ -13,7 +13,7 @@ It is organized as a learning-first codebase, so file naming and style can vary 
 
 ## Quick Start
 
-1. Create and activate a virtual environment.
+1. Create and activate a virtual environment(or uv can be used).
 
 ```bash
 python3 -m venv .venv
