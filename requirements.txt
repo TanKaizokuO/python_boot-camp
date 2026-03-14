@@ -1,0 +1,9 @@
+jupyter
+pandas
+numpy
+openpyxl
+requests
+beautifulsoup4
+pydantic
+Pillow
+psutil

@@ -19,7 +19,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
-2. Install the common packages used across notebooks and scripts.
+2. Install the common packages.
 
 ```bash
 pip install jupyter pandas numpy openpyxl requests beautifulsoup4
