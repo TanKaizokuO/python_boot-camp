@@ -1,108 +1,114 @@
-# 🛠️ Setup Guide — Get Your Environment Ready
+# Setup Guide
 
-Welcome! Follow these steps to set up Python on your machine so you can work through every module of this course.
-
----
+Follow this guide to prepare your machine for the full course.
 
 ## 1. Install Python
 
-If you don't have Python yet, download it from the official site:
+- Download Python from the official website: https://www.python.org/downloads/
+- Recommended version: Python 3.10 or newer.
 
-👉 [https://www.python.org/downloads/](https://www.python.org/downloads/)
+Check installation:
 
-**Minimum version required:** Python 3.10+
-
-Verify your installation:
 ```bash
 python3 --version
 ```
 
----
-
-## 2. Clone or Download This Repo
+If `python3` is not available on your system, try:
 
 ```bash
-git clone https://github.com/your-username/python.git
-cd python
+python --version
 ```
 
-Or simply download the ZIP from GitHub and unzip it.
+## 2. Open This Course Folder
 
----
+In terminal, move into this project:
+
+```bash
+cd /path/to/python
+```
 
 ## 3. Create a Virtual Environment
-
-A virtual environment keeps this course's packages isolated from the rest of your system.
 
 ```bash
 python3 -m venv .venv
 ```
 
-**Activate it:**
+Activate it:
 
-| Platform | Command |
-|---|---|
-| Linux / macOS | `source .venv/bin/activate` |
-| Windows (CMD) | `.venv\Scripts\activate.bat` |
-| Windows (PowerShell) | `.venv\Scripts\Activate.ps1` |
+- Linux/macOS:
 
-Your terminal prompt will show `(.venv)` when it's active.
+```bash
+source .venv/bin/activate
+```
 
----
+- Windows PowerShell:
 
-## 4. Install All Course Dependencies
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+- Windows CMD:
+
+```cmd
+.venv\Scripts\activate.bat
+```
+
+When active, your prompt usually shows `(.venv)`.
+
+## 4. Upgrade pip (Recommended)
+
+```bash
+python -m pip install --upgrade pip
+```
+
+## 5. Install Required Packages
 
 ```bash
 pip install -r requirements.txt
 ```
 
-This installs:
-- `jupyter` — for running notebooks
-- `pandas`, `numpy` — for data science modules
-- `pydantic` — for Module 10
-- `requests`, `beautifulsoup4` — for web scraping
-- `openpyxl` — for Excel data handling
-- `Pillow` — for image projects
-- `psutil` — for system monitoring scripts
+Installed packages cover notebooks, data processing, scraping, validation, imaging, and monitoring.
 
----
+## 6. Open and Run Notebooks
 
-## 5. Launch Jupyter Notebooks
+Start Jupyter:
 
 ```bash
 jupyter notebook
 ```
 
-Your browser will open automatically. Navigate to any `.ipynb` file and start learning!
+Then open notebooks in this order:
 
----
+1. `00_intro/getting_started.ipynb`
+2. `1.basics.ipynb`
+3. Continue by syllabus order in `SYLLABUS.md`
 
-## 6. Running Python Scripts
+## 7. Run Script-Based Modules
 
-For modules that use `.py` scripts instead of notebooks:
+Use this pattern:
 
 ```bash
-python path/to/script.py
+python path/to/file.py
 ```
 
-Example:
+Examples:
+
 ```bash
-python Basic_Projects/ceaser-cipher.py
+python Basic_Projects/Terminal_Task_Manager.py
+python Data-Handling-Project/CSV-TO-JSON.py
+python Web_Scrapping-Projects/Scrape-Books.py
 ```
 
----
+## Troubleshooting
 
-## ✅ You're Ready!
+| Problem                          | Fix                                                                  |
+| -------------------------------- | -------------------------------------------------------------------- |
+| `python3: command not found`     | Reinstall Python and ensure PATH is enabled during installation      |
+| `pip: command not found`         | Run installs with `python -m pip ...`                                |
+| `ModuleNotFoundError`            | Activate venv, then reinstall with `pip install -r requirements.txt` |
+| Jupyter not opening              | Run `python -m pip install jupyter` and start again                  |
+| Permission errors on Linux/macOS | Avoid system Python writes; use the local venv                       |
 
-Head back to the [README](./README.md) and start with **Module 00 – Getting Started**.
+## Done
 
----
-
-## 🔧 Troubleshooting
-
-| Problem | Fix |
-|---|---|
-| `python3: command not found` | Install Python from python.org |
-| `pip: command not found` | Use `python3 -m pip install ...` |
-| Jupyter won't open | Make sure venv is active and jupyter is installed |
-| Package import errors | Re-run `pip install -r requirements.txt` with venv active |
+You can now start from [README.md](./README.md) and follow [SYLLABUS.md](./SYLLABUS.md).
