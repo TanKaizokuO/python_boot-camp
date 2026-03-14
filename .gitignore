@@ -53,6 +53,8 @@ coverage.xml
 # OS
 .DS_Store
 Thumbs.db
+__MACOSX/
+._*
 
 # Logs
 *.log
